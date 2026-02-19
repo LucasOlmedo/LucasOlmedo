@@ -1,0 +1,103 @@
+# Galaxy Profile README Configuration
+# Copy this file to config.yml and customize it to make it your own!
+#
+# Usage:
+#   cp config.example.yml config.yml
+#   # Edit config.yml with your details
+#   python -m generator.main
+#
+# Demo mode (no API calls, uses this file directly):
+#   python -m generator.main --demo
+
+# Your GitHub username (required)
+username: LucasOlmedo
+
+# Profile information displayed in the galaxy header
+profile:
+  name: "Lucas Olmedo"
+  tagline: "Back End Developer | APIs | Agile Methodology | Software Engineer"
+  company: "Petlove"
+  location: "São Paulo, BR"
+  bio: |
+    About Me
+    * 🌎 São Paulo, Brasil
+    * 👨🏻‍💻 Coding since 2017
+    * 🎯 Learning English
+    * 🎮 Game Dev on weekends
+    * ✨ My Life: ✝️👨‍👩‍👧‍👦🏋🏻🥊🎼🎮📚
+  philosophy: '"Clean code saves lives."'
+
+# Social links displayed at the bottom of the profile
+social:
+  email: "lcsolmedosilva@gmail.com"
+  linkedin: "https://www.linkedin.com/in/lucasolmedo"
+  #website: "https://nyxorion.dev"
+
+# Galaxy arms represent your core focus areas
+# Each arm spirals out from the center with its own color and tech items
+# Available colors: "synapse_cyan", "dendrite_violet", "axon_amber"
+galaxy_arms:
+  - name: "Backend"
+    color: "synapse_cyan"
+    items:
+      - "PHP"
+      - "Laravel"
+      - "Python"
+      - "Node.js"
+  - name: "Frontend"
+    color: "dendrite_violet"
+    items:
+      - "React Native"
+      - "JavaScript"
+      - "CSS"
+  - name: "Others"
+    color: "axon_amber"
+    items:
+      - "Docker"
+      - "MySQL"
+      - "AWS"
+      - "Git"
+
+# Featured projects shown as constellation stars
+# Each project needs:
+#   repo: "owner/repo-name"   — GitHub repository path
+#   arm: 0-2                  — Which galaxy arm to associate with (index)
+#   description: "..."        — Short description shown on the card
+projects:
+  - repo: "LucasOlmedo/kanastra-file-processor"
+    arm: 0
+    description: "A project that uses processing queues for files with millions of lines."
+  - repo: "LucasOlmedo/muscle-bot-mvp"
+    arm: 1
+    description: "Personal MVP for a fitness app that tracks workouts and calories."
+
+# Theme color overrides (optional — defaults to deep space palette)
+# All values must be valid hex color codes (#RRGGBB)
+theme:
+  void: "#080c14"              # Darkest background
+  nebula: "#0f1623"            # Card backgrounds
+  star_dust: "#1a2332"         # Borders, dividers
+  synapse_cyan: "#00d4ff"      # Primary accent (arm color 1)
+  dendrite_violet: "#a78bfa"   # Secondary accent (arm color 2)
+  axon_amber: "#ffb020"        # Tertiary accent (arm color 3)
+  text_bright: "#f1f5f9"       # Primary text
+  text_dim: "#94a3b8"          # Secondary text
+  text_faint: "#64748b"        # Muted text, labels
+
+# Stats configuration — which metrics to show on the telemetry card
+stats:
+  metrics:
+    - "commits"
+    - "stars"
+    - "prs"
+    - "issues"
+    - "repos"
+
+# Language display settings
+languages:
+  exclude:                     # Languages to hide from the telemetry chart
+    - "HTML"
+    - "CSS"
+    - "Shell"
+    - "Makefile"
+  max_display: 8               # Maximum number of languages to show
